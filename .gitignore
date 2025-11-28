@@ -1,0 +1,7 @@
+# Игнорируем служебные файлы ОС
+.DC_Store
+Thumbs.db
+
+# Игнорируем логи и зависимости
+npm-debug.log*
+node_modules/
