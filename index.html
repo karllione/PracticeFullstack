@@ -5,36 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion!</title> <!--Название страницы-->
     <link rel="icon" href="assets/icons/Logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="assets/icons/Search.png" alt="Поиск" class="nav-icon">
-        <h1>Avion</h1>
-        <img src="assets/icons/ShoppingСart.png" alt="Корзина" class="nav-icon">
-        <img src="assets/icons/UserAvatar.png" alt="Профиль" class="nav-icon">
-        <nav>
-            <ul>
-                <li><a href="#">Plant pots</a></li>
-                <li><a href="#">Ceramics</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Chairs</a></li>
-                <li><a href="#">Crockery</a></li>
-                <li><a href="#">Tableware</a></li>
-                <li><a href="#">Cutlery</a></li>
-            </ul>
-        </nav>
+        <div class="header__container">
+            <!-- Иконки -->
+            <div class="header__icon-left">
+                <a href="#" class="icon-left">
+                    <i class="ri-search-line"></i>
+                </a>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    Avion
+                </a>
+            </div>
+            <!-- Иконки -->
+            <div class="header__icon-right">
+                <a href="#" class="icon-right">
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <a href="#" class="icon-right">
+                    <i class="ri-account-circle-line"></i>
+                </a>
+            </div>
+        </div>
     </header>
+    <div class="header__divider"></div>
+        <nav>
+                <ul>
+                    <li><a href="#">Plant pots</a></li>
+                    <li><a href="#">Ceramics</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Chairs</a></li>
+                    <li><a href="#">Crockery</a></li>
+                    <li><a href="#">Tableware</a></li>
+                    <li><a href="#">Cutlery</a></li>
+                </ul>
+        </nav>
     <main>
-        <section class="section-number-one">
-            <h1>The furniture brand for the future, with the timeless designs</h1>
-            <a href="catalog.html" class="button-link">
-                View collection
-            </a>
-            <p>
-                A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts,
-                tasteful colors and beautiful way to display things digitally using modern web technologies.
-            </p>
-            <img src="assets/img/RightImage.png" alt="Кресло">
+        <section class="about__us">
+            <div class="about__container">
+                <div class="info">
+                    <h1>The furniture brand for the future, with the timeless designs</h1>
+                    <p>
+                        A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts,
+                        tasteful colors and beautiful way to display things digitally using modern web technologies.
+                    </p>
+                    <a href="catalog.html" class="button-link">
+                        View collection
+                    </a>
+                </div>
+                <div class="about__image">
+                    <img src="assets/img/RightImage.png" alt="Кресло">
+                </div>
+            </div>
         </section>
         <section class="section-number-two">
             <h1>What makes our brand different</h1>

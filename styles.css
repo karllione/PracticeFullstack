@@ -1,0 +1,114 @@
+:root {
+    --hover-color: #e84b94;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 24px 30px;
+}
+
+.header__icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon-left {
+    justify-self: left;
+}
+
+.icon-right {
+    justify-self: right;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #222;
+    text-decoration: none;
+}
+
+.icon-left,
+.icon-right {
+    color: #555;
+    font-size: 18px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-left:hover,
+.icon-right:hover {
+    color: var(--hover-color);
+}
+
+.header__divider {
+  height: 1px;
+  width: 96%;
+  background-color: #e0e0e0;
+  margin: 0 auto;
+}
+
+/* Навигация */
+
+nav {
+    clear: both;
+    text-align: center;
+    padding: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+/* About секция */
+
+.about__
