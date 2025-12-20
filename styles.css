@@ -250,7 +250,7 @@ nav a:hover {
   display: flex;
   max-width: 1500px;
   flex-direction: column;
-  min-height: 600px; /* высота контейнера */
+  min-height: 600px;
 }
 
 .collection-title {
@@ -261,15 +261,15 @@ nav a:hover {
   font-size: 2.3rem;
   font-weight: normal;
   color: #333;
-  padding-top: 10px; /* отступ от верхнего края */
+  padding-top: 10px;
 }
 
 .collection-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 изображения в ряд */
-  gap: 20px; /* расстояние между карточками */
-  margin-top: 80px; /* отступ от заголовка */
-  justify-items: center; /* центрируем содержимое ячеек */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 80px;
+  justify-items: center;
 }
 
 .collection-item {
@@ -295,7 +295,7 @@ nav a:hover {
 }
 
 .collection-btn {
-  margin-top: 60px; /* прижимает кнопку вниз */
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   padding: 25px 40px;
@@ -310,4 +310,94 @@ nav a:hover {
 
 .collection-btn:hover {
     background-color: #e0e0e0;
+}
+
+/* Популярное */
+
+.popular {
+  padding: 70px 100px;
+  background-color: var(--white);
+}
+
+.popular__container {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.popular-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 80px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.popular-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.popular-item.big {
+  width: 60%;
+}
+
+.popular-item.small {
+  width: 29%;
+}
+
+.popular-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.popular-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: normal;
+  color: #333;
+  padding-top: 10px;
+}
+
+.popular-text {
+   margin-top: 15px;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: left;
+}
+
+.collection-btn {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 40px;
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.collection-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* CTA-секция */
+
+.cta {
+    padding: 70px 100px;
+    background-color: #f6f6f6;
 }
