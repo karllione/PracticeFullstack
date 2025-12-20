@@ -5,156 +5,268 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avion!</title> <!--Название страницы-->
     <link rel="icon" href="assets/icons/Logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="assets/icons/Search.png" alt="Поиск" class="nav-icon">
-        <h1>Avion</h1>
-        <img src="assets/icons/ShoppingСart.png" alt="Корзина" class="nav-icon">
-        <img src="assets/icons/UserAvatar.png" alt="Профиль" class="nav-icon">
-        <nav>
-            <ul>
-                <li><a href="#">Plant pots</a></li>
-                <li><a href="#">Ceramics</a></li>
-                <li><a href="#">Tables</a></li>
-                <li><a href="#">Chairs</a></li>
-                <li><a href="#">Crockery</a></li>
-                <li><a href="#">Tableware</a></li>
-                <li><a href="#">Cutlery</a></li>
-            </ul>
-        </nav>
+        <div class="header__container">
+            <!-- Иконки -->
+            <div class="header__icon-left">
+                <a href="#" class="icon-left">
+                    <i class="ri-search-line"></i>
+                </a>
+            </div>
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    Avion
+                </a>
+            </div>
+            <!-- Иконки -->
+            <div class="header__icon-right">
+                <a href="#" class="icon-right">
+                    <i class="ri-shopping-cart-line"></i>
+                </a>
+                <a href="#" class="icon-right">
+                    <i class="ri-account-circle-line"></i>
+                </a>
+            </div>
+        </div>
     </header>
+    <div class="header__divider"></div>
+    <nav>
+            <ul>
+                    <li><a href="#">Plant pots</a></li>
+                    <li><a href="#">Ceramics</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Chairs</a></li>
+                    <li><a href="#">Crockery</a></li>
+                    <li><a href="#">Tableware</a></li>
+                    <li><a href="#">Cutlery</a></li>
+            </ul>
+    </nav>
     <main>
-        <section class="section-number-one">
-            <h1>The furniture brand for the future, with the timeless designs</h1>
-            <a href="catalog.html" class="button-link">
-                View collection
-            </a>
-            <p>
-                A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts,
-                tasteful colors and beautiful way to display things digitally using modern web technologies.
-            </p>
-            <img src="assets/img/RightImage.png" alt="Кресло">
+        <section class="about">
+            <div class="about__container">
+                <div class="info">
+                    <h1>The furniture brand for the future, with the timeless designs</h1>
+                    <a href="#" class="button-link">
+                        View collection
+                    </a>
+                    <p>
+                        A new era in eco friendly furniture with Avelon, the French luxury retail brand with nice fonts,
+                        tasteful colors and beautiful way to display things digitally using modern web technologies.
+                    </p>
+                </div>
+                <div class="about__image">
+                    <img src="assets/img/RightImage.png" alt="Кресло">
+                </div>
+            </div>
         </section>
-        <section class="section-number-two">
-            <h1>What makes our brand different</h1>
-            <img src="assets/icons/Delivery.png" alt="Доставка" class="nav-icon">
-            <h2>Next day as standard</h2>
-            <p>
-                Order before 3pm and get your order the next day as standard
-            </p>
-            <img src="assets/icons/CheckmarkOutline.png" alt="Качество" class="nav-icon">
-            <h2>Made by true artisans</h2>
-            <p>
-                Handmade crafted goods made with real passion and craftmanship
-            </p>
-            <img src="assets/icons/Purchase.png" alt="Оплата" class="nav-icon">
-            <h2>Unbeatable prices</h2>
-            <p>
-                For our materials and quality you won't find better anywhere
-            </p>
-            <img src="assets/icons/Sprout.png" alt="Переработка" class="nav-icon">
-            <h2>Recycles packaging</h2>
-            <p>
-                We use 100% recycled packaging to ensure out footprint is manageable
-            </p>
+
+        <section class="benefits">
+            <div class="benefits__container">
+                <h1>What makes our brand different</h1>
+
+                <div class="cards">
+                    <div class="card">
+                        <i class="ri-truck-line card-icon"></i>
+                        <h2 class="card-title">Next day as standard</h2>
+                        <p class="card-text">
+                            Order before 3pm and get your order the next day as standard
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <i class="ri-checkbox-circle-line card-icon"></i>
+                        <h2 class="card-title">Made by true artisans</h2>
+                        <p class="card-text">
+                            Handmade crafted goods made with real passion and craftmanship
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <i class="ri-bank-card-line card-icon"></i>
+                        <h2 class="card-title">Unbeatable prices</h2>
+                        <p class="card-text">
+                            For our materials and quality you won't find better anywhere
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <i class="ri-plant-line card-icon"></i>
+                        <h2 class="card-title">Recycles packaging</h2>
+                        <p class="card-text">
+                            We use 100% recycled packaging to ensure out footprint is manageable
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section-number-three">
-            <h1>New ceramics</h1>
-            <img src="assets/img/Photo.png" alt="Кресло">
-            <h2>The Dandy Chair</h2>
-            <h2>£250</h2>
-            <img src="assets/img/Photo (3).png" alt="Стул">
-            <h2>Rustic Chair Set</h2>
-            <h2>£155</h2>
-            <img src="assets/img/Photo (1).png" alt="Ваза">
-            <h2>The Silky Vase</h2>
-            <h2>£125</h2>
-            <img src="assets/img/Photo (2).png" alt="Лампа">
-            <h2>The Lucy Lamp</h2>
-            <h2>£399</h2>
-            <a href="catalog.html" class="button-link">
-                View collection
-            </a>
+
+        <section class="collection">
+            <div class="collection__container">
+                <h1 class="collection-title">New ceramics</h1>
+
+                <div class="collection-grid">
+                    <div class="collection-item">
+                        <img src="assets/img/Photo.png" alt="Кресло">
+                        <p class="collection-text">The Dandy Chair</p>
+                        <p class="collection-text">£250</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="assets/img/Photo (3).png" alt="Стул">
+                        <p class="collection-text">Rustic Chair Set</p>
+                        <p class="collection-text">£155</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="assets/img/Photo (1).png" alt="Ваза">
+                        <p class="collection-text">The Silky Vase</p>
+                        <p class="collection-text">£125</p>
+                    </div>
+                    <div class="collection-item">
+                        <img src="assets/img/Photo (2).png" alt="Лампа">
+                        <p class="collection-text">The Lucy Lamp</p>
+                        <p class="collection-text">£399</p>
+                    </div>
+                </div>
+
+                <a href="#" class="collection-btn">
+                    View collection
+                </a>
+            </div>
         </section>
-        <section class="section-number-four">
-            <h1>Our popular products</h1>
-            <img src="assets/img/Large.png" alt="Диван">
-            <h2>The Poplar suede sofa</h2>
-            <h2>£980</h2>
-            <img src="assets/img/Photo.png" alt="Кресло">
-            <h2>The Dandy Chair</h2>
-            <h2>£250</h2>
-            <img src="assets/img/Photo (3).png" alt="Стул">
-            <h2>Rustic Chair Set</h2>
-            <h2>£155</h2>
-            <a href="catalog.html" class="button-link">
-                View collection
-            </a>
+
+        <section class="popular">
+            <div class="popular__container">
+                <h1 class="popular-title">Our popular products</h1>
+                <div class="popular-grid">
+                    <div class="popular-item big">
+                        <img src="assets/img/Large.png" alt="Диван">
+                        <p class="popular-text">The Popular suede sofa</p>
+                        <p class="popular-text">£980</p>
+                    </div>
+                    <div class="popular-item small">
+                        <img src="assets/img/Photo.png" alt="Кресло">
+                        <p class="popular-text">The Dandy Chair</p>
+                        <p class="popular-text">£250</p>
+                    </div>
+                    <div class="popular-item small">
+                        <img src="assets/img/Photo (3).png" alt="Стул">
+                        <p class="popular-text">Rustic Chair Set</p>
+                        <p class="popular-text">£155</p>
+                    </div>
+                </div>
+
+                <a href="#" class="collection-btn">
+                    View collection
+                </a>
+            </div>
         </section>
-        <section class="section-number-five">
-            <h1>Join the club and get the benefits</h1>
-            <p>
-                Sign up for our newsletter and receive exclusive offers on new ranges, sales,
-                pop up stores and more
-            </p>
-            <form action="#send_email" method="post">
-                <input type="email" id="email" name="email" placeholder="your@email.com">
-                <button type="submit">Sign Up</button>
-            </form>
+
+        <section class="cta">
+            <div class="cta__container">
+                <h1 class="cta-title">Join the club and get the benefits</h1>
+                <p class="cta-text">
+                    Sign up for our newsletter and receive exclusive offers on new ranges, sales,
+                    pop up stores and more
+                </p>
+                <form action="#send_email" method="post">
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
         </section>
-        <section class="section-number-six">
-            <h1>From a studio in London to a global brand with over 400 outlets</h1>
-            <p>
-                When we started Avion, the idea was simple. Make high quality furniture
-                affordable and available for the mass market.
-                Handmade, and lovingly crafted furniture and homeware is what we live,
-                breathe and design so our Chelsea boutique become the hotbed for the
-                London interior design community.
-            </p>
-            <button type="submit">Get in touch</button>
+
+        <section class="contact">
+            <div class="contact__container">
+                <div class="contact-info">
+                    <h1>From a studio in London to a global brand with over 400 outlets</h1>
+                    <p>
+                        When we started Avion, the idea was simple. Make high quality furniture
+                        affordable and available for the mass market.
+                    </p>
+                    <p>
+                        Handmade, and lovingly crafted furniture and homeware is what we live,
+                        breathe and design so our Chelsea boutique become the hotbed for the
+                        London interior design community.
+                    </p>
+                    <a href="#" class="button-link">
+                        Get in touch
+                    </a>
+                </div>
+            </div>
+            <div class="contact__image">
+                    <img src="assets/img/Image.png" alt="Мебель">
+            </div>
         </section>
-        <img src="assets/img/Image.png" alt="Мебель">
+
     </main>
-    <footer>
-        <h2>Menu</h2>
-        <nav>
-            <ul>
-                <li><a href="#">New arrivals</a></li>
-                <li><a href="#">Best sellers</a></li>
-                <li><a href="#">Recently viewed</a></li>
-                <li><a href="#">Popular this week</a></li>
-                <li><a href="#">All products</a></li>
-            </ul>
-        </nav>
-        <h2>Categories</h2>
-        <nav>
-            <ul>
-                <li><a href="#">Crockery</a></li>
-                <li><a href="#">Furniture</a></li>
-                <li><a href="#">Homeware</a></li>
-                <li><a href="#">Plant pots</a></li>
-                <li><a href="#">Chairs</a></li>
-                <li><a href="#">Crockery</a></li>
-            </ul>
-        </nav>
-        <h2>Our company</h2>
-        <nav>
-            <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Vacancies</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Returns policy</a></li>
-            </ul>
-        </nav>
-        <h2>Join our mailing list</h2>
-        <input type="email" id="email" name="email" placeholder="your@email.com">
-        <button type="submit">Sign Up</button>
-        <h3>Copyright 2022 Avion LTD</h3>
-        <img src="assets/icons/Logo--linkedin.png" alt="Линкедин" class="nav-icon">
-        <img src="assets/icons/Logo--pinterest.png" alt="Пинтерест" class="nav-icon">
-        <img src="assets/icons/Logo--skype.png" alt="Скайп" class="nav-icon">
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#">New arrivals</a></li>
+                        <li><a href="#">Best sellers</a></li>
+                        <li><a href="#">Recently viewed</a></li>
+                        <li><a href="#">Popular this week</a></li>
+                        <li><a href="#">All products</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Crockery</a></li>
+                        <li><a href="#">Furniture</a></li>
+                        <li><a href="#">Homeware</a></li>
+                        <li><a href="#">Plant pots</a></li>
+                        <li><a href="#">Chairs</a></li>
+                        <li><a href="#">Crockery</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3>Our company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Vacancies</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Returns policy</a></li>
+                    </ul>
+                </div>    
+            </div>
+
+            <div class="footer__form">
+                <h3>Join our mailing list</h3>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+            <div class="footer__copyright">
+                &copy, Copyright 2022 Avion LTD
+            </div>
+        </div>
+
+        <div class="footer__socials">
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-facebook-box-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-skype-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-pinterest-fill"></i></a>
+        </div>
     </footer>
 </body>
 </html>
