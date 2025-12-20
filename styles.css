@@ -401,3 +401,60 @@ nav a:hover {
     padding: 70px 100px;
     background-color: #f6f6f6;
 }
+
+.cta__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    background-color: var(--white);
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: normal;
+  width: 800px;
+  margin: 0 0 20px 0;
+  padding-top: 90px;
+  color: #333;
+}
+
+.cta-text {
+  font-size: 1.05rem;
+  width: 530px;
+  color: #333;
+  margin: 0 0 40px 0;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  max-width: 500px; /* ограничиваем ширину формы */
+}
+
+input[type="email"] {
+  flex: 1;
+  padding: 20px 16px;
+  border: none;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  color: #d0d0d0;
+}
+
+button[type="submit"] {
+  padding: 20px 35px;
+  background-color: #594f7f;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #7c73a4;
+}
