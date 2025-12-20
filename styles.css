@@ -1,5 +1,6 @@
 :root {
     --hover-color: #e84b94;
+    --white: #ffffff;
 }
 
 * {
@@ -10,7 +11,10 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    color: #393252;
 }
+
+/* Шапка */
 
 header {
     width: 100%;
@@ -99,10 +103,9 @@ nav li {
 nav a {
     text-decoration: none;
     color: #555;
-    font-size: 14px;
+    font-size: 17px;
     letter-spacing: 1px;
     transition: color 0.3s;
-    text-transform: uppercase;
 }
 
 nav a:hover {
@@ -111,4 +114,200 @@ nav a:hover {
 
 /* About секция */
 
-.about__
+.about {
+    padding: 70px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 0 auto;
+  min-height: 350px; /* ← уменьшена высота */
+  background-color: #271e4b;
+  width: 100%;
+  max-width: 1500px; /* можно уменьшить или оставить как есть */
+}
+
+.info {
+    flex: 1;
+    padding: 60px 40px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.info h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  width: 520px;
+  font-weight:normal;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.button-link {
+  display: inline-block;
+  padding: 25px 40px;
+  background: #594f7f;
+  color: var(--white);
+  text-decoration: none;
+  width: fit-content;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.button-link:hover {
+  background-color: #7c73a4;
+}
+
+.info p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--white);
+    margin: 0;
+    margin-top: auto;
+    padding-bottom: 30px;
+    align-self: flex-start;
+}
+
+.about__image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.about__image img {
+    width: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Преимущества */
+
+.benefits {
+  padding: 70px 100px;
+  background-color: var(--white);
+}
+
+.benefits__container h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 300px;
+  padding-left: 0;
+  background-color: white;
+  gap: 20px;
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Коллекция */
+
+.collection {
+  padding: 70px 100px;
+  background-color: var(--white);
+}
+
+.collection__container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1500px;
+  flex-direction: column;
+  min-height: 600px; /* высота контейнера */
+}
+
+.collection-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: normal;
+  color: #333;
+  padding-top: 10px; /* отступ от верхнего края */
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 изображения в ряд */
+  gap: 20px; /* расстояние между карточками */
+  margin-top: 80px; /* отступ от заголовка */
+  justify-items: center; /* центрируем содержимое ячеек */
+}
+
+.collection-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.collection-text {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #333;
+  text-align: left;
+}
+
+.collection-btn {
+  margin-top: 60px; /* прижимает кнопку вниз */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px 40px;
+  background-color: #f3f3f3;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.collection-btn:hover {
+    background-color: #e0e0e0;
+}
